@@ -6,6 +6,7 @@ from io import StringIO
 from typing import Optional, Dict, List, Any
 import os
 import sys
+from embeddings import GeminiEmbeddingModel
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
@@ -69,7 +70,7 @@ def get_recommendations_local(query: str = None, url: str = None, file_content: 
         if os.path.exists(f"{index_path}.faiss") and os.path.exists(f"{index_path}_metadata.pkl"):
             index = EmbeddingIndex.load(index_path)
         else:
-            model = SentenceTransformerModel()
+            model = GeminiEmbeddingModel()
             index = EmbeddingIndex(model)
             df = load_catalog_data()
             documents = df.to_dict(orient='records')
