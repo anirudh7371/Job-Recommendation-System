@@ -26,7 +26,7 @@ st.set_page_config(
 )
 
 # Constants
-API_URL = os.environ.get("API_URL", "http://localhost:8000")
+API_URL = os.environ.get("API_URL", "https://shl-api-j8jp.onrender.com/recommend")
 DEFAULT_K = 10
 
 
