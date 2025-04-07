@@ -88,5 +88,4 @@ dmypy.json
 __pycache__/
 *.pkl
 *.faiss
-*.csv
-*.json
+
