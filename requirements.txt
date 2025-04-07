@@ -1,0 +1,15 @@
+requests
+beautifulsoup4
+pandas
+numpy
+faiss-cpu
+scikit-learn
+streamlit
+fastapi
+uvicorn
+python-multipart
+google-generativeai
+python-dotenv
+tabulate>=0.8.10
+PyPDF2
+python-docx
