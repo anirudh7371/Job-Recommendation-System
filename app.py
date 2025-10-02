@@ -181,10 +181,10 @@ def display_recommendations(results: Dict):
                 st.markdown(f"**Match Score:** {rec.get('score', 0):.2f}")
 
 # App header
-st.title("SHL Assessment Recommender")
+st.title("Job Recommender")
 st.markdown("""
-This app recommends SHL assessments based on job descriptions. Enter a job description, 
-provide a URL, or upload a file to get personalized assessment recommendations.
+This app recommends jobs based on job descriptions. Enter a job description, 
+provide a URL, or upload a file to get personalized job recommendations.
 """)
 
 # Sidebar
@@ -195,12 +195,12 @@ with st.sidebar:
     st.header("About")
     st.markdown("""
     This app uses natural language processing and embeddings to match job descriptions 
-    with the most relevant SHL assessments.
+    with the most relevant job postings.
     
     **How it works:**
-    1. Each assessment in the SHL catalog is converted to an embedding vector
+    1. Each job posting in the database is converted to an embedding vector
     2. Your job description is also converted to an embedding
-    3. The system finds assessments with the most similar embeddings
+    3. The system finds job postings with the most similar embeddings
     
     **Tech Stack:**
     - Streamlit for the UI
@@ -287,7 +287,7 @@ st.markdown("---")
 st.markdown(
     """
     <div style="text-align: center; color: #888;">
-    SHL Assessment Recommender | Built with ❤️ using Streamlit and NLP
+    Built with ❤️ using Streamlit and NLP
     </div>
     """, 
     unsafe_allow_html=True
